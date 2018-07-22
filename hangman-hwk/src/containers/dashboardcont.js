@@ -1,11 +1,9 @@
 import * as React from "react";
-import * as request from "superagent";
 import Dashboard from "../components/dashboard";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { isWinner, makeGuess } from "../actions/actions";
+import { isWinner } from "../actions/actions";
 import Guesses from "./hangmangamecont";
-import { reducers } from "../reducers";
 import SubmitGuess from "../components/submitguess";
 
 class DashboardCont extends React.PureComponent {

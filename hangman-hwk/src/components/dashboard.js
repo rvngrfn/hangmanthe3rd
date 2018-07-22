@@ -1,8 +1,6 @@
 import * as React from "react";
 import NewGameButton from "./newgamebutton";
 import { connect } from "react-redux";
-import SubmitGuess from "./submitguess";
-import Guesses from "../containers/hangmangamecont";
 
 class Dashboard extends React.PureComponent {
 	gameStatus(props) {
@@ -21,6 +19,7 @@ class Dashboard extends React.PureComponent {
 			return (
 				<div className="winner">
 					<p>'Do a Dance, YOU Made It'</p>
+					<NewGameButton />
 				</div>
 			);
 	}

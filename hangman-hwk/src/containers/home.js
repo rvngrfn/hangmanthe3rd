@@ -1,6 +1,3 @@
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
-import * as request from "superagent";
 import * as React from "react";
 import NewGameButton from "../components/newgamebutton";
 

@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 import { isWinner, makeGuess } from "../actions/actions";
 import { connect } from "react-redux";
 
