@@ -20,11 +20,11 @@ class SubmitGuess extends React.PureComponent {
 
 	saveGuess() {
 		const { word } = this.props;
-		var myRE = /^[a-z]+$/i;
+		var alpha = "";
 		const guesses = this.refs.guesses.value.toLowerCase();
 
 		if (guesses === word) return this.props.isWinner();
-		if (guesses.match(myRE)) this.props.save(guesses);
+		if (guesses.match(alpha)) this.props.save(guesses);
 		this.refs.guesses.value = null;
 	}
 
